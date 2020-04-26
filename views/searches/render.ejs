@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+   <%- include('../pages/head')%>
+    <body>
+    <header>
+        <h1>search for digimon</h1>
+    </header>
+    <form action="/digimonForm" method="post">
+        <input type="text" name="enter" placeHolder="search for digimon">
+        <label><input type="radio" name="radio" value="name">Name</label>
+        <label><input type="radio" name="radio" value="level">level</label>
+        <button type="submit">Search for Digimon</button>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+   <%- include('../pages/head')%>
+    <body>
+    <header>
+        <h1>Result for digimon</h1>
+    </header>
+   <main>
+   <% searchShow.forEach(result =>{ %>
+       <img src="<%= result.img %>" alt="image">
+       <h2><%= result.title%></h2>
+       <p><%= result.level %></p>
+       <% }) %>
+   </main>
+     
+   
+    </body>
+</html>

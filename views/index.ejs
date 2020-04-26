@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./pages/head')%>
+    <body>
+    <header>
+        <h1>hello</h1>
+        <a href="./searches/render">Searches</a>
+    </header>
+   <main>
+   <% dataBaseDigimon.forEach(result =>{ %>
+       <img src="<%= result.img %>" alt="image" hidden>
+       <h2><%= result.title%></h2>
+       <p hidden><%= result.level %></p>
+       <button type="submit"> <a href="/digimonDetail/<%= result.id%>">View Details</a></button>
+       <% }) %>
+   </main>
+     
+    </body>
+</html>
